@@ -75,7 +75,7 @@ Alguns exemplos:
   - Cadastre 5 eventos com data futura
   - Liste os eventos que tenham a data no mês de abril
 
-#### Exerícios - Módulo I - Desenvolvimento de Node.js com banco de dados PostgreSQL
+### Exercícios - Módulo I - Desenvolvimento de Node.js com banco de dados PostgreSQL
 
 Qual dos tipos de dados abaixo NÃO é utilizado no banco de dados Postgresql:
 
@@ -227,7 +227,7 @@ Ao montarmos uma query parametrizada com o módulo em node.js, qual é a sintaxe
   - publishDate (String)
 - Implementar os endpoints para cada operação no banco de dados (CRUD)
 
-#### Exerícios - Módulo II - Desenvolvimento de Node.js com banco de dados MongoDB
+### Exercícios - Módulo II - Desenvolvimento de Node.js com banco de dados MongoDB
 
 O que é o MongoDB?
 
@@ -291,7 +291,94 @@ O que é o NoSQL?
 
 ### Aula I - Aprenda sobre o framework Hapi
 
+#### O que é o Hapi
+
+- Um framework para construir aplicações e serviços
+- Similar ao Express.js
+- Software de código aberto
+- Criado por Eran Hammer, Arquiteto de Plataforma Móvel no Walmart
+- Permite que os desenvolvedores se concentrem em escrever lógica de aplicativo reutilizável em vez de gastar tempo construindo infraestrutura
+
+#### Funcionalidades do Hapi
+
+- Authentication e Authorization: esquemas e estratégias de autenticação e autorização
+- Armazenamento em cache: cache do lado do cliente e do servidor (catbox)
+- Roteamento: permite configurar como o aplicativo da Web ou rotas da API devem ser exibidas
+- Validação: validação de schema de objetos (Joi)
+- Cookies: opção de configuração para fazer uso de cookies
+- Logging: método nativos para geração de logs
+- Tratamento de erros: conjunto de utilitários para retornar objetos de erro compatíveis com HTTP (Boom)
+- Monitoramento de processos: monitorar e reportar uma variedade de eventos (Good)
+
+#### Comparativo Hapi e Express
+
+##### Express
+
+- Um pouco menos opinativo que o Hapi, sendo menos abstraído do Node
+- Parece uma aplicação nativa em Node.js
+- Desenvolvedores mais experientes o Express por sua familiaridade
+- Usa middlewares para fornecer acesso ao pipeline de solicitação/resposta
+
+##### Hapi
+
+- Tem uma estrutura "padrão" para ser seguida
+- Implementação mais abstrata do Node
+- usa plugins para extender suas funcionalidades
+- Há geralmente um plugin em Hapi para cada middleware no Express
+
 ### Aula II - Desenvolvendo códigos com Hapi
+
+#### Pratique os conceitos aprendidos do Hapi
+
+- Criar uma rota na API para "/posts"
+- Criar um schema usando Mongoose com os campos:
+  - titles (String)
+  - content (String)
+  - author (String)
+  - publishDate (String)
+- Implementar os endpoints para cada operação no banco de dados (CRUD)
+
+### Exercícios - Módulo III - Criando serviços escaláveis com Hapi
+
+O que é o Hapi.js?
+
+- Um framework para construir aplicações e serviços.
+
+Qual o nome do utilitário usado para retornar objetos de erro compatíveis com o protocolo HTTP no Hapi.js?
+
+- Boom.
+
+Qual o comando usado no Hapi.js para iniciar o servidor?
+
+- server.start()
+
+Para adicionar o status HTTP 201 (Created) na resposta do servidor em uma rota no Hapi.js, usamos a função:
+
+- h.response().code(201)
+
+Em relação ao Hapi.js comparado com o Express, podemos dizer que?
+
+- Tem uma estrutura “padrão” para ser seguida e possui uma implementação mais abstrata do Node.
+
+Qual o método usado no Hapi.js para criar uma nova rota?
+
+- server.route()
+
+Para validarmos o campo ‘email’ em uma rota e torná-lo obrigatório usando o Joi, podemos usar qual função?
+
+- Joi.string().email().required()
+
+Para criarmos uma rota ‘/users’, onde o parâmetro ‘id’ do usuário é opcional, devemos adicionar qual valor no ‘path’ na configuração da rota no Hapi.js?
+
+- /users/{id?}
+
+Para que serve a biblioteca Joi?
+
+- Validar o schema de objetos.
+
+Dentre as funcionalidades do Hapi.js, Authentication e Authorization são?
+
+- Esquemas e estratégias de autenticação e autorização.
 
 ## Módulo IV - Desenvolvendo aplicações seguras com JWT
 
